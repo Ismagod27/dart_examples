@@ -17,3 +17,27 @@ void main() {
   print('Edad: ${informacion['Edad']}');
   print('Matrícula: ${informacion['Matrícula']}');
 }
+
+// Uso de Getters y Setters:
+
+class MyClass {
+  int _propiedad = 0;
+
+  // Getter
+  int get propiedad => _propiedad;
+
+  // Setter
+  set propiedad(int valor) {
+    if (valor >= 0) {
+      _propiedad = valor;
+    }
+  }
+}
+
+void main() {
+  MyClass obj = MyClass();
+  obj.propiedad = 10;  // Asigna valor usando el setter
+  print(obj.propiedad);  // Usa el getter: 10
+}
+
+//
