@@ -60,4 +60,28 @@ void main() {
   print(categorias);  // ['Hogar', 'Muebles', 'Promociones']
 }
 
-//
+// operaciones
+
+void main() {
+  // Datos personales
+  String nombre = 'Ismanol';
+  int edad = 22;
+
+  // Operaciones matemáticas
+  int num1 = 10;
+  int num2 = 5;
+
+  int suma = num1 + num2;
+  int resta = num1 - num2;
+  int multiplicacion = num1 * num2;
+  double division = num1 / num2;
+
+  // Mostrar los resultados
+  print('Hola, $nombre. Tienes $edad años.');
+  print('Resultados de las operaciones:');
+  print('$num1 + $num2 = $suma');
+  print('$num1 - $num2 = $resta');
+  print('$num1 * $num2 = $multiplicacion');
+  print('$num1 / $num2 = $division');
+}
+
