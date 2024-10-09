@@ -40,4 +40,24 @@ void main() {
   print(obj.propiedad);  // Usa el getter: 10
 }
 
+//Listas 
+
+void main() {
+  List<int> numeros = [1, 2, 3];
+  
+  // Operador Spread (agrega elementos de otra lista)
+  List<int> masNumeros = [0, ...numeros];  // [0, 1, 2, 3]
+  print(masNumeros);
+
+  bool promoActiva = true;
+
+  // Lista con if condicional
+  List<String> categorias = [
+    'Hogar', 
+    'Muebles',
+    if (promoActiva) 'Promociones'  // Solo se agrega si promoActiva es true
+  ];
+  print(categorias);  // ['Hogar', 'Muebles', 'Promociones']
+}
+
 //
